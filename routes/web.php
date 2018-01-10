@@ -152,8 +152,8 @@ Route::get('ask/pending/page/{page}/','Frontend\AskController@PendingAsks')->nam
 Route::get('ask/hot/page/{page}/','Frontend\AskController@HotAsks')->name('askhotlists');
 Route::get('paihangbang','Frontend\BrandsController@Paihangbang');
 Route::get('paihangbang/page/{page}/','Frontend\BrandsController@Paihangbang')->name('paihangbanglists');
-Route::get('pinpai','Frontend\BrandsController@Pinpai');
-Route::get('pinpai/page/{page}/','Frontend\BrandsController@pinpai')->name('Pinpai');
+//Route::get('pinpai','Frontend\BrandsController@Pinpai');
+//Route::get('pinpai/page/{page}/','Frontend\BrandsController@pinpai')->name('Pinpai');
 /*
  * weichat
  */
