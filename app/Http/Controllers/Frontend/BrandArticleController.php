@@ -28,8 +28,7 @@ class BrandArticleController extends Controller
                 $comments=Comment::where('archive_id',$thisarticleinfos->id)->where('is_hidden',0)->get();
                 $latesnews=Archive::where('ismake',1)->where('mid','<>',1)->whereIn('typeid',[1,3,4,5,9])->where('published_at','<=',Carbon::now())->latest()->take(10)->get();
                 $xgsearchs=Archive::where('ismake','1')->where('shorttitle','like','%'.$thisarticleinfos->article->brandname.'%')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
-                $published=$thisarticleinfos['attributes']['published_at'];
-                DB::table('archives')->where('id',$id)->update(['click'=>$thisarticleinfos->click+1,'published_at'=>$published]);
+                DB::table('archives')->where('id',$id)->update(['click'=>$thisarticleinfos->click+1]);
                 Addonarticle::where('id',$id)->update([
                     'brandattch'=>intval($thisarticleinfos->article->brandattch)+1,
                     'brandapply'=>intval($thisarticleinfos->article->brandapply)+1,
