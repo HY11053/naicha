@@ -3,12 +3,12 @@
 @section('keywords') {{$thistypeinfo->keywords}} @stop
 @section('description')  {{$thistypeinfo->description}}  @stop
 @section('headlibs')
-    <meta name="Copyright" content="21奶茶加盟网-{{env('APP_URL')}}"/>
-    <meta name="author" content="21奶茶加盟网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" >
+    <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
+    <meta name="author" content="世纪饮品网" />
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
 @stop
 @section('main_content')

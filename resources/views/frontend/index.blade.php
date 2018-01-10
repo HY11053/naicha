@@ -1,16 +1,16 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '21奶茶加盟网') }} @stop
-@section('keywords') {{ config('app.keywords', '零食加盟网') }} @stop
-@section('description') {{ config('app.description', '零食加盟网') }} @stop
+@section('title') {{ config('app.webname', '世纪饮品网') }} @stop
+@section('keywords') {{ config('app.keywords', '世纪饮品网') }} @stop
+@section('description') {{ config('app.description', '世纪饮品网') }} @stop
 @section('headlibs')
-    <meta name="Copyright" content="21奶茶加盟网-{{env('APP_URL')}}"/>
-    <meta name="author" content="21奶茶加盟网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}" >
-    <link rel="canonical" href="{{env('APP_URL')}}"/>
-    <meta property="og:image" content="{{env('APP_URL')}}/reception/images/logo.jpg"/>
+    <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
+    <meta name="author" content="世纪饮品网" />
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}" >
+    <link rel="canonical" href="{{config('app.url')}}"/>
+    <meta property="og:image" content="{{config('app.url')}}/reception/images/logo.jpg"/>
 @stop
 @section('subnav')
     <div class="sub_nav">
@@ -66,10 +66,10 @@
 								<span class="cont">
 								  <select name="select1" id="select1" class="select_bk">
 									<option selected="selected" value="0">行业分类</option>
-									<option value="1">奶茶店加盟</option>
-									<option value="3">炒货加盟</option>
-									<option value="4">干果加盟</option>
-									<option value="5">进口零食加盟</option>
+									<option value="1">奶茶店品牌</option>
+									<option value="3">港式奶茶</option>
+									<option value="4">台湾奶茶</option>
+									<option value="5">网红奶茶</option>
 								  </select>
 								</span>
                                     </p>
@@ -165,7 +165,7 @@
 
             <div class="index_box1_r">
                 <div class="count">
-                    <p>21奶茶加盟网入驻品牌数<br>
+                    <p>世纪饮品网入驻品牌数<br>
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
@@ -228,13 +228,13 @@
             <div class="index_box3_l">
                 <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic1.jpg" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}" alt="奶茶店加盟"/></a></div>
                 <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">奶茶店加盟</a></p>
-                <p class="desc">精美零食 抢占商机</p>
+                <p class="desc">热门品牌 抢占商机</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',1)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">零食品牌</span>
-                    <span class="desc">精选全球好品牌、看得见的商机前景</span>
+                    <span class="tit">奶茶品牌</span>
+                    <span class="desc">精选全球好奶茶品牌、看得见的商机前景</span>
                     <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
@@ -273,13 +273,13 @@
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
                 <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">炒货品牌</a></p>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">港式奶茶</a></p>
                 <p class="desc">松子/坚果/开心果/巴旦木</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">炒货品牌</span>
+                    <span class="tit">港式奶茶加盟</span>
                     <span class="desc">颗颗饱满、开口易剥 笑口常开</span>
                     <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">更多&gt;&gt;</a></span>
                 </div>
@@ -314,13 +314,13 @@
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
                 <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="进口零食"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">进口零食</a></p>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">台湾奶茶</a></p>
                 <p class="desc">原装进口 精挑细选</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
-                    <span class="tit">进口零食</span>
+                    <span class="tit">台湾奶茶品牌</span>
                     <span class="desc">汇聚全球零食品牌,上千款进口食品助您月利10万,掀起疯狂抢购狂潮</span>
                     <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
@@ -338,7 +338,6 @@
                     <div class="bd_r">
                         <div class="index_brand_list">
                             <ul>
-
                                 @foreach($latestrjinkoubrands as $latestrjinkoubrand)
                                     <li><a href="/{{$latestrjinkoubrand->arctype->real_path}}/{{$latestrjinkoubrand->id}}.shtml" target="_blank"><img src="{{$latestrjinkoubrand->litpic}}" title="{{$latestrjinkoubrand->article->brandname}}" alt="{{$latestrjinkoubrand->article->brandname}}"><span>{{$latestrjinkoubrand->article->brandname}}</span></a></li>
                                 @endforeach
@@ -360,7 +359,7 @@
         <section>
         <div class="index_box4 clearfix">
             <div class="cont4_con fl">
-                <h2>大家都在看</h2>
+                <h2>网红奶茶</h2>
                 <div class="con_fir">
                     <div class="fir_left">
                         @foreach($seesrbrands as $seesrbrand)
@@ -381,7 +380,7 @@
                 </div>
             </div>
             <div class="cont4_con fr">
-                <h2>生意百科</h2>
+                <h2>奶茶百科</h2>
                 <div class="con_sec">
                     <ul>
                         @foreach($askrows as $index=>$askrow)
@@ -402,7 +401,7 @@
         <section>
         <div class="index_box5">
             <div class="cont5_left">
-                <h2>创业大讲堂</h2>
+                <h2>奶茶大讲堂</h2>
                 <div class="left_one">
                     <div class="one_top">
                         @foreach($recommendnews as $recommendnew)
@@ -431,7 +430,7 @@
                     </div>
                 </div>
                 <div class="left_two">
-                    <h4>零食采购信息</h4>
+                    <h4>奶茶采购信息</h4>
                     <dl>
                         @foreach($caiguonews as $index=>$caiguonew)
                         <dd><span>{{date('Y-m-d',strtotime($caiguonew->created_at))}}</span><i class=" ye ">{{$index+1}}.</i><a href="/{{$caiguonew->arctype->real_path}}/{{$caiguonew->id}}.shtml" target="_blank" title="{{$caiguonew->title}}">{{$caiguonew->title}}</a></dd>
@@ -452,7 +451,7 @@
                 </div>
             </div>
             <div class="cont5_right">
-                <h2>零食展会信息</h2>
+                <h2>奶茶展会信息</h2>
                 <div class="right_con">
                     <dl>
                         @foreach($zhbrands as $nums=>$zhbrand)

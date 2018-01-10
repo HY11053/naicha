@@ -3,17 +3,17 @@
 @section('keywords') {{$thisarticleinfos->keywords}} @stop
 @section('description')  {{$thisarticleinfos->description}} @stop
 @section('headlibs')
-    <meta name="Copyright" content="21奶茶加盟网-{{env('APP_URL')}}"/>
-    <meta name="author" content="21奶茶加盟网" />
-    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" />
-    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',env('APP_URL'))}}{{Request::getrequesturi()}}" >
+    <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
+    <meta name="author" content="世纪饮品网" />
+    <meta http-equiv="mobile-agent" content="format=wml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <meta http-equiv="mobile-agent" content="format=html5; url={{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" />
+    <link rel="alternate" media="only screen and(max-width: 640px)" href="{{str_replace('http://www.','http://m.',config('app.url'))}}{{Request::getrequesturi()}}" >
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}"/>
     <meta property="og:type" content="article"/>
     <meta property="article:published_time" content="{{$thisarticleinfos->created_at}}+08:00" /> <meta property="og:image" content="{{env('APP_URL')}}{{$thisarticleinfos->litpic}}"/>
-    <meta property="article:author" content="21奶茶加盟网" />
-    <meta property="article:published_first" content="21奶茶加盟网, {{env('APP_URL')}}{{Request::getrequesturi()}}" />
+    <meta property="article:author" content="世纪饮品网" />
+    <meta property="article:published_first" content="世纪饮品网, {{env('APP_URL')}}{{Request::getrequesturi()}}" />
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop
 @section('main_content')
@@ -23,7 +23,7 @@
         <div class="news_center">
             <div class="ny_message">
                 <h1> {{$thisarticleinfos->title}}</h1>
-                <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：21奶茶加盟网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
+                <div class="ny_message-js"> 时间：{{$thisarticleinfos->created_at}} <span>来源：世纪饮品网</span> <span>浏览：{{$thisarticleinfos->click}}</span> </div>
             </div>
             <div class="body_tit clearfix">
                 {!! $thisarticleinfos->article->body !!}
@@ -58,7 +58,7 @@
         </div>
         <div class="new_right">
             <div class="new_bt">
-                <h3> <i></i> 零售店加盟排行榜 </h3>
+                <h3> <i></i> 奶茶店加盟排行榜 </h3>
                 <div class="rank_bd">
                     <ul>
                         @foreach($topbrands as $index=>$topbrand)

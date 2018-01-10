@@ -8,7 +8,7 @@
     <meta name="applicable-device" content="mobile">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="csrf-token" content=" {{ csrf_token() }}">
-    <title>@yield('title')-21奶茶加盟网</title>
+    <title>@yield('title')-世纪饮品网</title>
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}" >
@@ -49,7 +49,7 @@
             <a href="/mobilesitemap.xml">网站地图</a>|<a href="/about/" rel="nofollow">关于我们</a>|<a href="/law/" rel="nofollow">免责声明</a>|<a href="{{env('APP_URL')}}">电脑版</a>
         </div>
         <div class="copyright">
-            <p>21奶茶加盟网 沪ICP备16055116号-11</p>
+            <p>世纪饮品网 沪ICP备16055116号-11</p>
             <p>上海莫卡网络科技有限公司</p>
         </div>
     </div>

@@ -218,7 +218,7 @@
 	</div>
     <div class="index_news rela_news">
         <div class="common_tit">
-            <a class="tit">最新零食新闻</a>
+            <a class="tit">最新奶茶新闻</a>
         </div>
         <div class="bd">
             <ul>
@@ -232,7 +232,7 @@
     {
         "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
         "@id": "{{str_replace('www.','m.',env('APP_URL'))}}{{Request::getrequesturi()}}",
-        "title": "{{$thisarticleinfos->title}} -21奶茶加盟网",
+        "title": "{{$thisarticleinfos->title}} -世纪饮品网",
         "images": [
             @if(count($piclinks)>2)
                 @for($i=0;$i<3;$i++)

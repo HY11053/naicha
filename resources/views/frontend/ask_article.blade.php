@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="new_bt">
-                    <h3> <i></i> 零售店加盟排行榜 </h3>
+                    <h3> <i></i> 奶茶店加盟排行榜 </h3>
                     <div class="rank_bd">
                         <ul>
 

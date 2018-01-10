@@ -263,7 +263,7 @@ class ArticleController extends Controller
      */
     function Brands()
     {
-        $articles=Archive::where('mid',1)->where('dutyadmin',auth('admin')->user()->id)->latest()->paginate(30);
+        $articles=Archive::where('mid',1)->latest()->paginate(30);
         return view('admin.article',compact('articles'));
     }
 
