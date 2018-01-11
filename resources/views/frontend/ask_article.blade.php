@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
 @section('title'){{$thisaskinfo->title}}@stop
-@section('keywords') {{$thisaskinfo->title}} @stop
-@section('description') {{str_limit(strip_tags($thisaskinfo->body),'77','')}}@stop
+@section('keywords'){{$thisaskinfo->title}}@stop
+@section('description'){{str_limit(strip_tags($thisaskinfo->body),'77','')}}@stop
 @section('headlibs')
     <link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
 @stop

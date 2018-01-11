@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{$title}} @stop
-@section('keywords')  {{$title}},{{$title}}加盟@stop
-@section('description') 世纪饮品网{{$title}}频道实时发布更新最新{{$title}}信息及{{$title}}品牌资讯。包含行业最全{{$title}}加盟项目及品牌。{{$title}}的各类费用投资和成本预算 @stop
+@section('title'){{$title}}@stop
+@section('keywords'){{$title}},{{$title}}加盟@stop
+@section('description')世纪饮品网{{$title}}频道实时发布更新最新{{$title}}信息及{{$title}}品牌资讯。包含行业最全{{$title}}加盟项目及品牌。{{$title}}的各类费用投资和成本预算 @stop
 
 <!--主体开始-->
 @section('main_content')

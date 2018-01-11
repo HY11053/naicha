@@ -8,16 +8,16 @@
     <meta name="applicable-device" content="pc" />
     <meta name="csrf-token" content=" {{ csrf_token() }}">
     @if(Request::getrequesturi()=='/')
-    <title>@yield('title')</title>
+<title>@yield('title')</title>
     @else
-        <title>@yield('title')-世纪饮品网</title>
+<title>@yield('title')-世纪饮品网</title>
     @endif
-    <meta name="keywords" content="@yield('keywords')"/>
+<meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link href="/reception/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/reception/css/zxbj_bottom_slide.css" rel="stylesheet" type="text/css"/>
 @yield('headlibs')
-    <script type="text/javascript" src="/reception/js/jquery.min.js"></script>
+<script type="text/javascript" src="/reception/js/jquery.min.js"></script>
     <script type="text/javascript" src="/reception/js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="/reception/js/index.js"></script>
 </head>

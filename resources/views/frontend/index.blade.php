@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
-@section('title') {{ config('app.webname', '世纪饮品网') }} @stop
-@section('keywords') {{ config('app.keywords', '世纪饮品网') }} @stop
-@section('description') {{ config('app.description', '世纪饮品网') }} @stop
+@section('title'){{ config('app.webname', '世纪饮品网') }}@stop
+@section('keywords'){{ config('app.keywords', '世纪饮品网') }}@stop
+@section('description'){{ config('app.description', '世纪饮品网') }}@stop
 @section('headlibs')
     <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
     <meta name="author" content="世纪饮品网" />
