@@ -15,20 +15,20 @@
 @section('subnav')
     <div class="sub_nav">
         <dl>
-            <dt class="icon1"><a href="/{{\App\AdminModel\Arctype::where('id','1')->value('real_path')}}/" target="_blank">零食加盟品牌大全</a></dt>
+            <dt class="icon1"><a href="/{{\App\AdminModel\Arctype::where('id','1')->value('real_path')}}/" target="_blank">奶茶加盟品牌大全</a></dt>
             @foreach($lingshibrands as $lingshibrand)
             <dd><a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml" target="_blank" title="{{$lingshibrand->article->brandname}}">{{$lingshibrand->article->brandname}}</a></dd>
             @endforeach
         </dl>
         <dl class="dl_wid1">
-            <dt class="icon2"><a href="/{{\App\AdminModel\Arctype::where('id','3')->value('real_path')}}/" target="_blank" >炒货店加盟品牌</a></dt>
+            <dt class="icon2"><a href="/{{\App\AdminModel\Arctype::where('id','3')->value('real_path')}}/" target="_blank" >台湾奶茶加盟品牌</a></dt>
             @foreach($chaohuobrands as $chaohuobrand)
                 <dd><a href="/{{ $chaohuobrand->arctype->real_path}}/{{ $chaohuobrand->id}}.shtml" target="_blank" title="{{ $chaohuobrand->article->brandname}}">{{ $chaohuobrand->article->brandname}}</a></dd>
             @endforeach
 
         </dl>
         <dl class="dl_wid1">
-            <dt class="icon3"><a href="/{{\App\AdminModel\Arctype::where('id','5')->value('real_path')}}/" target="_blank">进口零食品牌加盟</a></dt>
+            <dt class="icon3"><a href="/{{\App\AdminModel\Arctype::where('id','5')->value('real_path')}}/" target="_blank">港式、网红奶茶品牌加盟</a></dt>
             @foreach($jinkoubrands as $jinkoubrand)
             <dd><a href="/{{ $jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtml" target="_blank" title="{{$jinkoubrand->article->brandname}}">{{$jinkoubrand->article->brandname}}</a></dd>
             @endforeach
@@ -169,10 +169,10 @@
                         <span>61{{\App\AdminModel\Archive::where('mid',1)->count()}}</span>
                     </p>
                     <ul>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',5)->value('typeid'))->value('real_path')}}/5.shtml" title="【三只松鼠】森林系零食品牌 不负好时光" target="_blank">【三只松鼠】森林系零食品牌 不负好时光</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',38)->value('typeid'))->value('real_path')}}/38.shtml" title="【良品铺子】良心品质 百年铺子" target="_blank">【良品铺子】良心品质 百年铺子</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',91)->value('typeid'))->value('real_path')}}/91.shtml" title="【一扫光】13国原料采购 0经验无忧开店" target="_blank">【一扫光】13国原料采购 0经验无忧开店</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',111)->value('typeid'))->value('real_path')}}/111.shtml" title="百草味】国民品牌 百草味 知心知味" target="_blank">【百草味】国民品牌 百草味 知心知味</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',29)->value('typeid'))->value('real_path')}}/29.shtml" title="【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!" target="_blank">【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',39)->value('typeid'))->value('real_path')}}/39.shtml" title="【一点点奶茶】源自台湾 一杯奶茶 一句问候" target="_blank">【一点点奶茶】源自台湾 一杯奶茶 一句问候</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',91)->value('typeid'))->value('real_path')}}/91.shtml" title="【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“" target="_blank">【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',111)->value('typeid'))->value('real_path')}}/111.shtml" title="【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营" target="_blank">【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营</a></li>
                     </ul>
                     <div class="btn"><a href="javascript:;" class="ico-quoted">马上找好项目</a></div>
                 </div>
