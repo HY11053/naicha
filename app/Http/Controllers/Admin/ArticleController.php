@@ -166,6 +166,7 @@ class ArticleController extends Controller
             }else{
                 $request['flags'].=',p';
             }
+
         }else{
             $request['litpic']='';
         }
@@ -181,8 +182,8 @@ class ArticleController extends Controller
         $request['jmask_content']=$this->ImageInformation($request->input('jmask_content'),$request->input('shorttitle')?$request->input('shorttitle'):$request->input('brandname'),$request->input('title'));
         $request['jmlc_content']=$this->ImageInformation($request->input('jmlc_content'),$request->input('shorttitle')?$request->input('shorttitle'):$request->input('brandname'),$request->input('title'));
         $request['jmzc_content']=$this->ImageInformation($request->input('jmzc_content'),$request->input('shorttitle')?$request->input('shorttitle'):$request->input('brandname'),$request->input('title'));
-        $flags=array_unique(explode(',',Archive::where('id',$id)->value('flags')));
-        $request['flags']=implode(',',$flags);
+        //$flags=array_unique(explode(',',Archive::where('id',$id)->value('flags')));
+        //$request['flags']=implode(',',$flags);
         Archive::findOrFail($id)->update($request->all());
         Addonarticle::findOrFail($id)->update($request->all());
         return redirect(action('Admin\ArticleController@Index'));
