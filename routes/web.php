@@ -107,6 +107,12 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('weichatusers','WechatUserController@UserLists');
     Route::get('weichatuser/{openid}','WechatUserController@User');
     Route::post('weichatuser/{openid}','WechatUserController@PostUser');
+    Route::get('brandimport','NaichaBrandController@importBrands');
+    Route::get('brandlists','NaichaBrandController@brandListsView');
+    Route::get('branddatas/del/{id}','NaichaBrandController@Delete');
+    Route::post('brandstatus/{id}', 'NaichaBrandController@Status')->name('status');
+    Route::get('weichatuser/{openid}','WechatUserController@User');
+
     Route::get('Atlas',function(){
         abort(403);
     });

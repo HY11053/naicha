@@ -87,6 +87,7 @@
                     <li @if(Request::getRequestUri()=='/admin/makesitemap')class="active"@endif><a href="/admin/makesitemap"><i class="fa fa-circle-o"></i>XML地图生成</a></li>
                     <li @if(Request::getRequestUri()=='/admin/phone')class="active"@endif><a href="/admin/phone"><i class="fa fa-circle-o"></i> 电话提交管理</a></li>
                     <li @if(Request::getRequestUri()=='/admin/makemsitemap')class="active"@endif><a href="/admin/makemsitemap"><i class="fa fa-circle-o"></i> 移动端地图生成</a></li>
+                    <li @if(Request::getRequestUri()=='/admin/brandlists')class="active"@endif><a href="/admin/brandlist"><i class="fa fa-circle-o"></i>奶茶品牌列表</a></li>
                     <li @if(Request::getRequestUri()=='/admin/worklinks')class="active"@endif><a href="/admin/worklinks"><i class="fa fa-circle-o"></i> 链接生成</a></li>
                 </ul>
             </li>

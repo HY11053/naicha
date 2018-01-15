@@ -385,8 +385,8 @@
                     <ul>
                         @foreach($askrows as $index=>$askrow)
                             <li class="@if($index==0) one @elseif ($index==1) two @else three @endif bor">
-                                <span><a href="/ask/{{$askrow->id}}.shtml" title="{{$askrow->title}}" target="_blank">{{$askrow->title}}</a></span>
-                                <p> {{str_limit(trim(strip_tags($askrow->body)),$limit =64,$end = '...')}}</p>
+                                <span><a href="{{$askrow->arctype->real_path}}/{{$askrow->id}}.shtml" title="{{$askrow->title}}" target="_blank">{{$askrow->title}}</a></span>
+                                <p> {{str_limit(trim(strip_tags($askrow->article->body)),$limit =64,$end = '...')}}</p>
                             </li>
                         @endforeach
                     </ul>

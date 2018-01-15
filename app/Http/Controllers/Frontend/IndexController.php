@@ -35,7 +35,7 @@ class IndexController extends Controller
         $seesbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[4])->where('published_at','<=',Carbon::now())->take(3)->orderBy('click','desc')->get();
         $seesrbrands=Archive::where('flags','like','%'.'p'.'%')->where('mid','1')->whereIn('typeid',[4])->where('published_at','<=',Carbon::now())->skip(3)->take(5)->orderBy('click','desc')->get();
         //奶茶百科
-        $askrows=Archive::where('flags','like','%'.'a'.'%')->take(3)->get();
+        $askrows=Archive::where('flags','like','%'.'a'.'%')->where('mid','<>',1)->take(3)->get();
         //奶茶大讲堂
         $recommendnews=Archive::where('flags','like','%'.'c'.'%')->where('mid','<>','1')->where('published_at','<=',Carbon::now())->latest()->take(2)->orderBy('published_at','desc')->get();
         $latesnews=Archive::where('mid','<>','1')->where('typeid','<>',7)->where('published_at','<=',Carbon::now())->latest()->take(6)->orderBy('published_at','desc')->get();
