@@ -9,7 +9,7 @@
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">品牌分类列表</h3>
+                    <h3 class="box-title">品牌分类列表 <span style="color: red">{{$datas->total()}}</span></h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
