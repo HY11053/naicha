@@ -203,7 +203,7 @@
             </div>
         </div>
 
-        <div class="bn260"><a href="/lingshidianpp/91.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt=""/></a></div>
+        <div class="bn260"><a href="/taiwannaicha/29.shtml" target="_blank"><img src="/reception/images/temp/bn6.jpg" width="260" height="295" alt="CoCo奶茶"/></a></div>
 
         <div class="side_news">
             <div class="common_bt">

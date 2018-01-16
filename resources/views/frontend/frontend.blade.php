@@ -79,15 +79,6 @@
 <script src="/reception/js/comment.js"></script>
     <script type="text/javascript" src="/reception/js/side_fixed.js"></script>
 <script src="/reception/js/GlobalProvinces.js" type="text/javascript"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?e40d7bbd754d9f32039af9c7515e047c";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
     <div style="width:300px;margin:0 auto; padding:20px 0;">
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011302003924" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011302003924号</p></a>
     </div>

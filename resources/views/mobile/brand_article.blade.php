@@ -228,30 +228,6 @@
             </ul>
         </div>
     </div>
-    <script type="application/ld+json">
-    {
-        "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
-        "@id": "{{str_replace('www.','m.',env('APP_URL'))}}{{Request::getrequesturi()}}",
-        "title": "{{$thisarticleinfos->title}} -世纪饮品网",
-        "images": [
-            @if(count($piclinks)>2)
-                @for($i=0;$i<3;$i++)
-                    @if($i<2)
-                    "{{$piclinks[$i]}}",
-                    @else
-                "{{$piclinks[$i]}}"
-                  @endif
-            @endfor
-        @else
-            "{{str_replace('www.','m.',$thisarticleinfos->litpic)}}"
-        @endif
-            ],
-        "description": "{{$thisarticleinfos->description}}",
-        "pubDate": "{{str_replace(' ','T',$thisarticleinfos->created_at)}}"
-    }
-</script>
-    <script src="//msite.baidu.com/sdk/c.js?appid=1554954769730759"></script>
-
     <script src="/adminlte/plugins/chartjs/Chart.min.js"></script>
     <script>
         $(function () {
@@ -267,7 +243,7 @@
             // Get context with jQuery - using jQuery's .get() method.
 
             var areaChartData = {
-                labels: ["三只松鼠", "良品铺子", "一扫光", "老婆大人", "怡佳人", "零食多", "舌间味"],
+                labels: ["coco都可", "贡茶", "泰芒了", "Royaltea皇茶", "柠檬工坊", "茶物语", "甘茶度"],
                 datasets: [
                     {
                         label: "其他热门品牌",

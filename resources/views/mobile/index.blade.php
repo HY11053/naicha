@@ -1,7 +1,7 @@
 @extends('mobile.mobile')
-@section('title') {{ config('app.webname', '零食加盟网') }} @stop
-@section('keywords') {{ config('app.keywords', '零食加盟网') }} @stop
-@section('description') {{ config('app.description', '零食加盟网') }} @stop
+@section('title') {{ config('app.webname', '世纪饮品网') }} @stop
+@section('keywords') {{ config('app.keywords', '世纪饮品网') }} @stop
+@section('description') {{ config('app.description', '世纪饮品网') }} @stop
 @section('main_content')
     <div class="index_nav">
         <ul>
@@ -13,7 +13,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/">零食品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/">奶茶店品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -45,7 +45,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/">炒货品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/">港式奶茶加盟</a>
         </div>
         <div class="bd">
             <ul>
@@ -78,7 +78,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',4)->value('real_path')}}/">干果品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/">台湾奶茶</a>
         </div>
         <div class="bd">
             <ul>
@@ -112,7 +112,7 @@
     </div>
     <div class="index_item">
         <div class="common_tit">
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',1)->value('real_path')}}/">进口零食品牌</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',4)->value('real_path')}}/">网红奶茶品牌</a>
         </div>
         <div class="bd">
             <ul>
@@ -180,8 +180,8 @@
     </div>
     <div class="index_news">
         <div class="common_tit">
-            <a class="more" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/">更多&gt;&gt;</a>
-            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/">加盟快讯</a>
+            <a class="more" href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/">更多&gt;&gt;</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/">加盟快讯</a>
         </div>
         <div class="bd">
             <ul>
@@ -193,8 +193,8 @@
     </div>
     <div class="index_news">
         <div class="common_tit">
-            <a class="more" href="/ask/">更多&gt;&gt;</a>
-            <a class="tit" href="/ask/">创业指南</a>
+            <a class="more" href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/">更多&gt;&gt;</a>
+            <a class="tit" href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/">创业指南</a>
         </div>
         <div class="bd">
             <ul>

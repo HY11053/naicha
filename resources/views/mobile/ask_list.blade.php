@@ -25,7 +25,7 @@
 			</ul>
 		</div>
 		<div class="page">
-			{!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$asklists->links()) !!}
+			{!! $asklists->links() !!}
 		 </div>
 	</div>
 	

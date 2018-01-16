@@ -107,11 +107,11 @@
                         </form>
                         <div class="tit">投资金额：</div>
                         <div class="price">
-                            <a title="1-5万元项目" href="/project/0-1~5-0-0.shtml">1-5万元</a>
-                            <a title="5－10万元项目" href="/project/0-5~10-0-0.shtml">5-10万元</a>
-                            <a title="10－20万元项目" href="/project/0-10~20-0-0.shtml">10-20万元</a>
-                            <a title="20－50万元项目" href="/project/0-20~50-0-0.shtml">20-50万元</a>
-                            <a title="50-100万元项目" href="/project/0-50~100-0-0.shtml">50-100万元</a>
+                            <a title="1-5万元项目" href="/project/0-1-5-0-0.shtml">1-5万元</a>
+                            <a title="5－10万元项目" href="/project/0-5-10-0-0.shtml">5-10万元</a>
+                            <a title="10－20万元项目" href="/project/0-10-20-0-0.shtml">10-20万元</a>
+                            <a title="20－50万元项目" href="/project/0-20-50-0-0.shtml">20-50万元</a>
+                            <a title="50-100万元项目" href="/project/0-50-100-0-0.shtml">50-100万元</a>
                             <a title="100万元以上项目" href="/project/0-100-0-0.shtml">100万以上</a>
                         </div>
                         <div class="tit">面积：</div>
@@ -171,8 +171,8 @@
                     <ul>
                         <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',29)->value('typeid'))->value('real_path')}}/29.shtml" title="【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!" target="_blank">【CoCo奶茶】CoCo 为您严选优质茶叶以及在地化采购季节鲜果并且不断创新研发严格食安控管所制成的健康茶饮!</a></li>
                         <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',39)->value('typeid'))->value('real_path')}}/39.shtml" title="【一点点奶茶】源自台湾 一杯奶茶 一句问候" target="_blank">【一点点奶茶】源自台湾 一杯奶茶 一句问候</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',91)->value('typeid'))->value('real_path')}}/91.shtml" title="【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“" target="_blank">【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“</a></li>
-                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',111)->value('typeid'))->value('real_path')}}/111.shtml" title="【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营" target="_blank">【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',79)->value('typeid'))->value('real_path')}}/79.shtml" title="【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“" target="_blank">【阿姨奶茶】采用传统手工熬煮的工艺，倡导“选料上乘、加工精细、口味纯正“</a></li>
+                        <li><a href="/{{\App\AdminModel\Arctype::where('id',\App\AdminModel\Archive::where('id',72)->value('typeid'))->value('real_path')}}/72.shtml" title="【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营" target="_blank">【LELECHA乐乐茶】LELECHA楽楽茶 坚持匠心直营</a></li>
                     </ul>
                     <div class="btn"><a href="javascript:;" class="ico-quoted">马上找好项目</a></div>
                 </div>
@@ -274,13 +274,13 @@
             <div class="index_box3_l h420">
                 <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
                 <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank">港式奶茶</a></p>
-                <p class="desc">松子/坚果/开心果/巴旦木</p>
+                <p class="desc">丝袜奶茶/港式拉茶</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">港式奶茶加盟</span>
-                    <span class="desc">颗颗饱满、开口易剥 笑口常开</span>
+                    <span class="desc">选址-设计-装修-开店-经营一条龙</span>
                     <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}/" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
@@ -313,16 +313,16 @@
         <section>
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="进口零食"/></a></div>
-                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">台湾奶茶</a></p>
-                <p class="desc">原装进口 精挑细选</p>
-                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/" target="_blank"><img src="/reception/images/index_pic3.jpg" alt="台湾奶茶"/></a></div>
+                <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/" target="_blank">台湾奶茶</a></p>
+                <p class="desc">22个系列 百种产品</p>
+                <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/" target="_blank">查看详情&gt;</a></p>
             </div>
             <div class="index_box3_r">
                 <div class="hd">
                     <span class="tit">台湾奶茶品牌</span>
-                    <span class="desc">汇聚全球零食品牌,上千款进口食品助您月利10万,掀起疯狂抢购狂潮</span>
-                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',5)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
+                    <span class="desc">加盟台湾正宗奶茶 热销大陆 2人操作，24小时热卖不断</span>
+                    <span class="more"><a href="/{{\App\AdminModel\Arctype::where('id',2)->value('real_path')}}/" target="_blank">更多&gt;&gt;</a></span>
                 </div>
                 <div class="bd">
                     <div class="bd_l">
@@ -451,7 +451,7 @@
                 </div>
             </div>
             <div class="cont5_right">
-                <h2>奶茶展会信息</h2>
+                <h2>奶茶配方大全</h2>
                 <div class="right_con">
                     <dl>
                         @foreach($zhbrands as $nums=>$zhbrand)

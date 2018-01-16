@@ -486,7 +486,7 @@
 <script>
     $(function () {
         var areaChartData = {
-            labels: ["三只松鼠", "良品铺子", "一扫光", "老婆大人", "怡佳人", "零食多", "舌间味"],
+            labels: ["coco都可", "贡茶", "泰芒了", "Royaltea皇茶", "柠檬工坊", "茶物语", "甘茶度"],
             datasets: [
                 {
                     label: "其他热门品牌",

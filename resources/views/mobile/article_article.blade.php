@@ -37,19 +37,4 @@
             </ul>
         </div>
     </div>
-    <script type="application/ld+json">
-    {
-        "@context": "https://zhanzhang.baidu.com/contexts/cambrian.jsonld",
-        "@id": "{{str_replace('www.','m.',env('APP_URL'))}}{{Request::getrequesturi()}}",
-        "title": "{{$thisarticleinfos->title}} -世纪饮品网",
-        "images": [
-
-            "{{str_replace('www.','m.',$thisarticleinfos->litpic)}}"
-            ],
-        "description": "{{$thisarticleinfos->description}}",
-        "pubDate": "{{str_replace(' ','T',$thisarticleinfos->created_at)}}"
-    }
-</script>
-    <script src="//msite.baidu.com/sdk/c.js?appid=1554954769730759"></script>
-
 @stop
