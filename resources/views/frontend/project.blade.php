@@ -26,20 +26,20 @@
         <dl>
             <dt>投资金额</dt>
             <dd><a class="hover" target="_self" href="#">全部</a></dd>
-            <dd><a target="_self" href="/project/0-1~5-0-0.shtml">1-5万元</a></dd>
-            <dd><a target="_self" href="/project/0-5~10-0-0.shtml">5-10万元</a></dd>
-            <dd><a target="_self" href="/project/0-10~20-0-0.shtml">10-20万元</a></dd>
-            <dd><a target="_self" href="/project/0-20~30-0-0.shtml">20-30万元</a></dd>
-            <dd><a target="_self" href="/project/0-30~50-0-0.shtml">30-50万元</a></dd>
-            <dd><a target="_self" href="/project/0-50~100-0-0.shtml">50-100万元</a></dd>
+            <dd><a target="_self" href="/project/0-1-5-0-0.shtml">1-5万元</a></dd>
+            <dd><a target="_self" href="/project/0-5-10-0-0.shtml">5-10万元</a></dd>
+            <dd><a target="_self" href="/project/0-10-20-0-0.shtml">10-20万元</a></dd>
+            <dd><a target="_self" href="/project/0-20-30-0-0.shtml">20-30万元</a></dd>
+            <dd><a target="_self" href="/project/0-30-50-0-0.shtml">30-50万元</a></dd>
+            <dd><a target="_self" href="/project/0-50-100-0-0.shtml">50-100万元</a></dd>
         </dl>
         <dl>
             <dt>店铺面积</dt>
             <dd><a class="hover" target="_self" href="#">全部</a></dd>
-            <dd><a target="_self" href="/project/0-0-1~10-0.shtml">10平米以下</a></dd>
-            <dd><a target="_self" href="/project/0-0-10~30-0.shtml">10-30平米</a></dd>
-            <dd><a target="_self" href="/project/0-0-30~50-0.shtml">30-50平米</a></dd>
-            <dd><a target="_self" href="/project/0-0-50~80-0.shtml">50-80平米</a></dd>
+            <dd><a target="_self" href="/project/0-0-1-10-0.shtml">10平米以下</a></dd>
+            <dd><a target="_self" href="/project/0-0-10-30-0.shtml">10-30平米</a></dd>
+            <dd><a target="_self" href="/project/0-0-30-50-0.shtml">30-50平米</a></dd>
+            <dd><a target="_self" href="/project/0-0-50-80-0.shtml">50-80平米</a></dd>
             <dd><a target="_self" href="/project/0-0-100-0.shtml">100平米以上</a></dd>
         </dl>
         <dl>
@@ -83,7 +83,7 @@
                 <a class="cur" href="#">默认排序</a>
                 <a href="#">金额排序<i class="up"></i><!--<i class="down"></i>--></a>
             </div>
-            <div class="order_item_r">共找到<span>{{$pagelists->total()}}</span>个零食品牌加盟项目</div>
+            <div class="order_item_r">共找到<span>{{$pagelists->total()}}</span>个奶茶品牌加盟项目</div>
         </div>
 
         <!--列表 开始-->

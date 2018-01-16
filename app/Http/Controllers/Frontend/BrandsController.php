@@ -94,7 +94,7 @@ class BrandsController extends Controller
      * 品牌大全
      */
     public function Pinpai(Request $request, $page=0){
-        $cid='pinpai';
+        $cid='brands';
         $pagelists=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
         //转换自带分页器为自定义的分页器
         $pagelists= Paginator::transfer(

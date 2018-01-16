@@ -11,10 +11,13 @@ use Illuminate\Http\Request;
 
 class Position{
     function Positions($path){
-        preg_match('/(^[\/])[\w\/]+[\/$]/',$path,$matches);
-        //dd($matches[0]);
+        if (preg_match('/([\d]+\.shtml)/',$path,$match))
+        {
+            $path=str_replace($match[0],'',$path);
+        }
+        preg_match('/(^[\/])[\w\/]+[^\/$]/',$path,$matches);
         if(!empty($matches)){
-            $matches[0]=preg_replace('/\/page\/(\d+)\//', '', $matches[0]);
+            $matches[0]=preg_replace('/\/page\/(\d+)/', '', $matches[0]);
             $typeinfos=Arctype::where('real_path',substr($matches[0],1,-1))->first();
             if(empty($typeinfos))
             {

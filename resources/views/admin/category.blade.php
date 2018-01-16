@@ -21,7 +21,7 @@
                 <div class="box-header with-border">
                     <h3 class="box-title "><a href="/admin/article/type/{{$key}}"> {{$topnav}}</a> </h3>
                     <div class="spide_span">
-                        <span class="label label-primary pull-right ncls">@if($key!=6) {{\App\AdminModel\Archive::where('typeid',$key)->count()}} @else {{\App\AdminModel\Ask::max('id')}} @endif</span>
+                        <span class="label label-primary pull-right ncls">@if($key!=60) {{\App\AdminModel\Archive::where('typeid',$key)->count()}} @else {{\App\AdminModel\Ask::max('id')}} @endif</span>
                         <span class="label label-danger pull-right" data-toggle="modal" data-target=".modal-sm{{$key}}">删除</span>
                         <div class="modal fade modal-sm{{$key}}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel{{$key}}">
                             <div class="modal-dialog modal-sm modal-s-m{{$key}}" role="document">

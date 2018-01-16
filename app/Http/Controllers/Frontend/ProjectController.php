@@ -15,24 +15,20 @@ class ProjectController extends Controller
 {
    public function Search(Request $request,$p1=[],$p2='',$p3='',$p4='')
    {
-       preg_match('/project\/([0-9]+)-([0-9~]+)-([0-9~]+)-([0-9]+)\.shtml/',$request->path(),$matches);
+       preg_match('/project\/([0-9]+)-([0-9~\-]+)-([0-9~\-]+)-([0-9]+)\.shtml/',$request->path(),$matches);
        switch ($matches[1]){
            case 0:
                $brand='奶茶店品牌';
                break;
            case 1:
-               $brand='奶茶店品牌';
+               $brand='台湾奶茶';
                break;
            case 2:
-               $brand='炒货店品牌';
+               $brand='港式奶茶';
                break;
            case 3:
-               $brand='干果店品牌';
+               $brand='网红奶茶';
                break;
-           case 3:
-               $brand='进口零食品牌';
-               break;
-
        }
        $tz=$matches[2]?$matches[2].'万':'';
        $squares=$matches[3]?$matches[3].'平米':'';
@@ -43,7 +39,14 @@ class ProjectController extends Controller
         $p2=empty($p2)?'':$p2;
         $p3=empty($p3)?'':$p3;
         $p4=empty($p4)?'':Area::where('id',$p4)->value('city');
-        $ids=Addonarticle::whereIn('typeid',$p1)->where('brandpay','like','%'.$p2.'%')->where('acreage','like','%'.$p3.'%')->where('brandaddr','like','%'.$p4.'%')->where('created_at','<=',Carbon::now())->latest()->pluck('id');
+        $ids=Addonarticle::whereIn('typeid',$p1)->where('brandpay','like','%'.$p2.'%')
+            ->when($p3, function ($query) use ($p3) {
+                return $query->where('acreage','like','%'.$p3.'%');
+            })
+            ->when($p4, function ($query) use ($p4) {
+                return $query->where('brandaddr','like','%'.$p4.'%');
+            })
+            ->where('created_at','<=',Carbon::now())->latest()->pluck('id');
         $arrs=[];
         for ($i=0;$i<count($ids);$i++)
         {

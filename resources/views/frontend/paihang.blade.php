@@ -18,13 +18,11 @@
 	<div class="ph_l">
 		<p class="tit">58奶茶店品牌排行榜</p>
 		<ul>
-			<li class="cur"><a target="_self" href="#">奶茶店品牌</a></li>
-			<li><a target="_self" href="/lingshidianpp/">炒货店品牌</a></li>
-			<li><a target="_self" href="/ganguodian/">干果店品牌</a></li>
-			<li><a target="_self" href="/jinkoulingshi/">进口零食品牌</a></li>
-			<li><a target="_self" href="/shushidian/">熟食店品牌</a></li>
-			<li><a target="_self" href="/paihangbang/">零食品牌排行榜</a></li>
-			<li><a target="_self" href="/pinpai/">零食品牌大全</a></li>
+			<li class="cur"><a target="_self" href="/pinpai">奶茶店品牌</a></li>
+			<li><a target="_self" href="/taiwannaicha">台湾奶茶</a></li>
+			<li><a target="_self" href="/gangshinaicha">港式奶茶</a></li>
+			<li><a target="_self" href="/wanghongnaicha">网红奶茶</a></li>
+			<li><a target="_self" href="/brands">奶茶品牌大全</a></li>
 		</ul>
 	</div>
 	<!--左边 结束-->
@@ -53,7 +51,8 @@
 			
 		</div>
 		<div class="page">
-			{!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}
+			{{--{!! preg_replace('/<a href=[\'\"]?([^\'\" ]+).*?>/','<a href="${1}/">',$pagelists->links()) !!}--}}
+			{!! $pagelists->links() !!}
 		</div>
 	</div>
 	<!--右边 结束-->
