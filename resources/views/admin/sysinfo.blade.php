@@ -4,9 +4,9 @@
     @stop
     @section('content')
         <div class="right_col" role="main">
-            简介：零食品牌CMS是基于laravel5.3框架开发的CMS系统
+            简介：LARSTYCMSV2.0 是基于laravel5.5框架开发的CMS系统
             <hr/>
-            当前版本V1.0
+            当前版本V2.0
             <hr/>
             运行环境信息：{{$_SERVER['SERVER_SOFTWARE']}}
             <hr/>

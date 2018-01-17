@@ -8,7 +8,11 @@
     <meta name="applicable-device" content="mobile">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="csrf-token" content=" {{ csrf_token() }}">
-    <title>@yield('title')-世纪饮品网</title>
+    @if(Request::getrequesturi()=='/')
+        <title>@yield('title')</title>
+    @else
+        <title>@yield('title')-世纪饮品网</title>
+    @endif
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}" >
