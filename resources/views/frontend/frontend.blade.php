@@ -35,7 +35,7 @@
     <div class="copyright">
         <p>世纪饮品网友情提示：多打电话、多咨询、实地考察，可降低投资风险！</p>
         <p>Copyright © 2017 www.21yinpin.com Corporation, All Rights Reserved 上海莫卡网络科技有限公司 版权所有</p>
-        <p><a href="http://www.miitbeian.gov.cn/" rel="nofollow"> 沪ICP备16055116号-11</a></p>
+        <p><a href="http://www.miitbeian.gov.cn/" rel="nofollow">  沪ICP备16055116号-17</a></p>
     </div>
         <div class="footernew footheight" style="width:1000px;" bosszone="footer">
             <div style="width:960px;">

@@ -53,7 +53,7 @@
             <a href="/mobilesitemap.xml">网站地图</a>|<a href="/about/" rel="nofollow">关于我们</a>|<a href="/law/" rel="nofollow">免责声明</a>|<a href="{{env('APP_URL')}}">电脑版</a>
         </div>
         <div class="copyright">
-            <p>世纪饮品网 沪ICP备16055116号-11</p>
+            <p>世纪饮品网  沪ICP备16055116号-17</p>
             <p>上海莫卡网络科技有限公司</p>
         </div>
     </div>
