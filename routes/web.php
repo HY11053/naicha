@@ -140,6 +140,10 @@ Route::group(['domain' => 'm.21yinpin.com'], function () {
     //Route::get('map','Frontend\StatementController@map');
     Route::get('contact','Mobile\StatementController@contact');
     Route::get('ask/{id}.shtml','Mobile\MobileController@AskArticle');
+    Route::get('paihangbang','Mobile\MobileController@Paihangbang');
+    Route::get('paihangbang/page/{page}/','Mobile\MobileController@Paihangbang')->name('paihangbanglists');
+    Route::get('brands','Mobile\MobileController@Pinpai');
+    Route::get('brands/page/{page}/','Mobile\MobileController@pinpai')->name('Pinpai');
     Route::get('{path}','Mobile\MobileController@BrandLists');
     Route::get('{path?}/page/{page}/','Mobile\MobileController@BrandLists')->name('pagelists');
     Route::get('{path?}/{id}.shtml','Mobile\MobileController@BrandArticle');

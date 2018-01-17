@@ -34,7 +34,7 @@ class SiteMapController extends Controller
         </url>";
         foreach ($typedirs as $typedir){
             $sitemapinfos.="<url>
-                <loc>$appurl/$typedir/</loc>
+                <loc>$appurl/$typedir</loc>
                 <changefreq>daily</changefreq>                
                 <priority>1.0</priority>
             </url>";
@@ -86,13 +86,13 @@ class SiteMapController extends Controller
         ";
         foreach ($typedirs as $typedir){
             $sitemapinfos.="<url> 
-            <loc>$mappurl/$typedir/</loc> 
+            <loc>$mappurl/$typedir</loc> 
             <mobile:mobile type=\"mobile\"/>
             <changefreq>daily</changefreq>
             <priority>1.0</priority>
             </url> 
             <url>
-                <loc>$appurl/$typedir/</loc>
+                <loc>$appurl/$typedir</loc>
                 <changefreq>daily</changefreq>                
                 <priority>1.0</priority>
             </url>          

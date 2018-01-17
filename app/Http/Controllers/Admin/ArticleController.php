@@ -107,13 +107,8 @@ class ArticleController extends Controller
         if($thisarticle->created_at>Carbon::now()){
             return redirect(action('Admin\ArticleController@Index'));
         }else{
-            if ($request->original)
-            {
-                $this->BaiduCurl($thisarticleurl,$tokenorigial,'original');
-            }else{
-                $this->BaiduCurl($thisarticleurl,$token,'');
-            }
-            event(new SitemapEvent());
+            $this->BaiduCurl($thisarticleurl,$token,'');
+            //event(new SitemapEvent());
             return redirect(action('Admin\ArticleController@Index'));
         }
     }

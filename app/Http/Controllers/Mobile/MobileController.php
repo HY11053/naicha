@@ -91,8 +91,62 @@ class MobileController extends Controller
 
     }
 
-    /*
-     * 内容页面
+    /**排行榜
+     * @param Request $request
+     * @param int $page
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function Paihangbang(Request $request, $page=0){
+        $cid='paihangbang';
+        $pagelists=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
+        //转换自带分页器为自定义的分页器
+        $pagelists= Paginator::transfer(
+            $cid,//传入分类id,
+            $pagelists//传入原始分页器
+        );
+        if($pagelists->count()<1)
+        {
+            abort(403);
+        }
+        $topbrands=Archive::where('mid',1)->where('ismake','1')->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
+        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $brandtypes=Arctype::where('mid',1)->get();
+        $thistypeinfo=Arctype::where('real_path','paihangbang')->first();
+        $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+        return view('mobile.brands_list',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
+
+    }
+
+    /**品牌大全
+     * @param Request $request
+     * @param int $page
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function Pinpai(Request $request, $page=0){
+        $cid='brands';
+        $pagelists=Archive::where('mid',1)->where('ismake','1')->where('published_at','<=',Carbon::now())->latest()->paginate($perPage = 10, $columns = ['*'], $pageName = 'page', $page);
+        //转换自带分页器为自定义的分页器
+        $pagelists= Paginator::transfer(
+            $cid,//传入分类id,
+            $pagelists//传入原始分页器
+        );
+        if($pagelists->count()<1)
+        {
+            abort(403);
+        }
+        $topbrands=Archive::where('mid',1)->where('ismake','1')->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
+        $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
+        $brandtypes=Arctype::where('mid',1)->get();
+        $thistypeinfo=Arctype::where('real_path','pinpai')->first();
+        $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
+        return view('mobile.brands_list',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
+
+    }
+    /**内容页面
+     * @param Request $request
+     * @param $path
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
 public function BrandArticle(Request $request,$path,$id)

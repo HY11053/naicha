@@ -1,5 +1,5 @@
 <ul class="list-group col-md-4">
-    <li  class="list-group-item active"> 电话提交信息</li>
+    <li  class="list-group-item active"> 奶茶电话提交信息</li>
     <li  class="list-group-item">姓名： {{$name}}</li>
     <li  class="list-group-item"> 电话：{{$phoneno}}</li>
     <li  class="list-group-item"> 地址：{{$address}}</li>
