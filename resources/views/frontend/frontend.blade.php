@@ -30,7 +30,7 @@
 </main>
 <footer>
 <div class="footer">
-    <div class="footer_nav"><a href="/about/" rel="nofollow">关于我们</a>　|　企业服务　|　人才招聘　|　<a href="/contact/" rel="nofollow">联系我们</a>　|　合作客户　|　<a href="/law/" rel="nofollow">法律声明</a>　|　友情链接　|　服务导航　|　<a href="/storage/sitemap.xml" rel="nofollow">网站地图</a>　　|　加盟导航 sitemap</div>
+    <div class="footer_nav"><a href="/about" rel="nofollow">关于我们</a>　|　企业服务　|　人才招聘　|　<a href="/contact" rel="nofollow">联系我们</a>　|　合作客户　|　<a href="/law" rel="nofollow">法律声明</a>　|　友情链接　|　服务导航　|　<a href="/storage/sitemap.xml" rel="nofollow">网站地图</a>　　|　加盟导航 sitemap</div>
 
     <div class="copyright">
         <p>世纪饮品网友情提示：多打电话、多咨询、实地考察，可降低投资风险！</p>

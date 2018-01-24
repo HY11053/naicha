@@ -1,10 +1,10 @@
-@extends('mobile.mobile')
+@extends('mip.mip')
 @section('title') {{$thistypeinfo->title}}@stop
 @section('keywords') {{$thistypeinfo->keywords}} @stop
 @section('description')  {{$thistypeinfo->description}}  @stop
 @section('main_content')
     <div class="common_tit">
-        <nav class="tit">@include('mobile.position')</nav>
+        <nav class="tit">@include('mip.position')</nav>
     </div>
     <div class="list_middle">
         <div class="text_centre">
@@ -12,7 +12,7 @@
                 @foreach($pagelists as $pagelist)
                 <li>
                     <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml">
-                        <div class="img_show"><img src="{{$pagelist->litpic}}" class="img_list"></div>
+                        <div class="img_show"><mip-img src="{{$pagelist->litpic}}" class="img_list"></div>
                         <div class="cont">
                             <p class="tit_1">{{$pagelist->title}}</p>
                             <p class="info">{{$pagelist->description}}</p>

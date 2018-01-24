@@ -24,13 +24,13 @@
             <dt>项目分类</dt>
             <dd><a class="hover" target="_self" href="#">全部</a></dd>
             @foreach($brandtypes as $brandtype)
-            <dd><a target="_self" href="/{{$brandtype->real_path}}/">{{$brandtype->typename}}</a></dd>
+            <dd><a target="_self" href="/{{$brandtype->real_path}}">{{$brandtype->typename}}</a></dd>
             @endforeach
 
         </dl>
         <dl>
             <dt>投资金额</dt>
-            <dd><a class="hover" target="_self" href="#">全部</a></dd>
+            <dd><a class="hover" target="_self" href="javascript:;">全部</a></dd>
             <dd><a target="_self" href="/project/0-1-5-0-0.shtml">1-5万元</a></dd>
             <dd><a target="_self" href="/project/0-5-10-0-0.shtml">5-10万元</a></dd>
             <dd><a target="_self" href="/project/0-10-20-0-0.shtml">10-20万元</a></dd>
@@ -40,7 +40,7 @@
         </dl>
         <dl>
             <dt>店铺面积</dt>
-            <dd><a class="hover" target="_self" href="#">全部</a></dd>
+            <dd><a class="hover" target="_self" href="javascript:;">全部</a></dd>
             <dd><a target="_self" href="/project/0-0-1-10-0.shtml">10平米以下</a></dd>
             <dd><a target="_self" href="/project/0-0-10-30-0.shtml">10-30平米</a></dd>
             <dd><a target="_self" href="/project/0-0-30-50-0.shtml">30-50平米</a></dd>
@@ -49,7 +49,7 @@
         </dl>
         <dl>
             <dt>所在地区</dt>
-            <dd><a class="hover" target="_self" href="#">全部</a></dd>
+            <dd><a class="hover" target="_self" href="javascript:;">全部</a></dd>
             <dd><a target="_self" href="/project/0-0-0-1.shtml">北京</a></dd>
             <dd><a target="_self" href="/project/0-0-0-125.shtml">济南</a></dd>
             <dd><a target="_self" href="/project/0-0-0-71.shtml">广州</a></dd>
@@ -80,8 +80,8 @@
     <div class="w910">
         <div class="order_item">
             <div class="order_item_l">
-                <a class="cur" href="#">默认排序</a>
-                <a href="#">金额排序<i class="up"></i><!--<i class="down"></i>--></a>
+                <a class="cur" href="javascript:;" target="_self">默认排序</a>
+                <a href="javascript:;" target="_self">金额排序<i class="up"></i><!--<i class="down"></i>--></a>
             </div>
             <div class="order_item_r">共找到<span>{{$pagelists->total()}}</span>个{{$thistypeinfo->typename}}加盟项目</div>
         </div>
@@ -104,8 +104,8 @@
                         <span class="money fr h4">综合指数：&nbsp;<em class="red">{{$pagelist->article->brandattch}}</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近咨询：&nbsp;<em class="red">{{$pagelist->article->brandchat}}</em>&nbsp;&nbsp;</span>
                     </div>
                     <div class="list-three">
-                        <a href="#" target="_blank" class="squaer tell fl">免费通话</a>
-                        <a href="#" target="_blank" class="squaer liuyan fl">马上留言</a>
+                        <a href="javascript:;" target="_self" class="squaer tell fl">免费通话</a>
+                        <a href="javascript:;" target="_self" class="squaer liuyan fl">马上留言</a>
                         <a href="/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml" target="_blank" class="squaer xiangqing fl">项目详情</a>
                         <span class="byb_btn"><label><input type="checkbox" id="Db_64806" cid="64806" class="checkbox" data-pro='{"pid":{{$pagelist->id}},"name":"{{$pagelist->shorttitle}}","pic":"{{$pagelist->litpic}}","url":"{{env('app_url')}}/{{$pagelist->arctype->real_path}}/{{$pagelist->id}}.shtml"}'>
 						项目比一比</label></span>

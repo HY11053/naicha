@@ -13,9 +13,9 @@
             <div class="hd"></div>
             <div class="bd">
                 <ul>
-                    <li class="cur"><a href="/about/" target="_blank">关于我们</a></li>
-                    <li><a href="/law/" target="_blank">法律声明</a></li>
-                    <li><a href="/contact/" target="_blank">联系我们</a></li>
+                    <li class="cur"><a href="/about" target="_blank">关于我们</a></li>
+                    <li><a href="/law" target="_blank">法律声明</a></li>
+                    <li><a href="/contact" target="_blank">联系我们</a></li>
                 </ul>
             </div>
         </div>

@@ -5,7 +5,7 @@
     <div class="d_nav">
         <ul>
             @foreach($headers->HeaderLists() as $real_path=>$header)
-                <li><a href="/{{$real_path}}/" >{{$header}}</a></li>
+                <li><a href="/{{$real_path}}" >{{$header}}</a></li>
             @endforeach
         </ul>
     </div>

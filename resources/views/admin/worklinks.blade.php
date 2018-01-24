@@ -7,7 +7,7 @@
 @section('content')
     <h3>工作链接生成</h3>
     @foreach($links as $link)
-        <li>{{env('APP_URL')}}/{{$link->arctype->real_path}}/{{$link->id}}.shtml@ {{$link->title}}</li>
+        <li>http://mip.21yinpin.com/{{$link->arctype->real_path}}/{{$link->id}}.shtml</li>
     @endforeach
 @stop
 

@@ -1,24 +1,23 @@
-@extends('mobile.mobile')
+@extends('mip.mip')
 @section('title') {{$thisarticleinfos->title}} @stop
 @section('keywords') {{$thisarticleinfos->keywords}} @stop
 @section('description')  {{$thisarticleinfos->description}} @stop
 @section('main_content')
     <div class="common_tit">
-        <nav class="tit">@include('mobile.position')</nav>
+        <nav class="tit">@include('mip.position')</nav>
     </div>
     <div class="list_middle">
         <div class="content_brand">
             <div class="content">
                 <h1>{{$thisarticleinfos->title}}</h1>
                 <small>时间：{{$thisarticleinfos->created_at}}&nbsp;&nbsp;&nbsp;&nbsp;浏览量:{{$thisarticleinfos->click}}</small>
-              {!! $thisarticleinfos->article->body !!}
+              {!! str_replace('<img','<mip-img',preg_replace("/style=.+?['|\"]/i",'',$thisarticleinfos->article->body)); !!}
             </div>
         </div>
     </div>
-    @include('mobile.comments')
     <div class="index_news rela_news">
         <div class="common_tit">
-            <a class="tit">相关文章</a>
+            <nav class="tit">相关文章</nav>
         </div>
         <div class="bd">
             <ul>
@@ -30,7 +29,7 @@
     </div>
     <div class="index_news rela_news">
         <div class="common_tit">
-            <a class="tit">最新奶茶新闻</a>
+            <nav class="tit">最新奶茶新闻</nav>
         </div>
         <div class="bd">
             <ul>

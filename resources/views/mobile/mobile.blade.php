@@ -16,6 +16,7 @@
     <meta name="keywords" content="@yield('keywords')"/>
     <meta name="description" content="@yield('description')"/>
     <link rel="canonical" href="{{env('APP_URL')}}{{Request::getrequesturi()}}" >
+    <link rel="miphtml" href="{{str_replace('http://www.','http://mip.',config('app.url'))}}{{Request::getrequesturi()}}">
     <link rel="stylesheet" type="text/css" href="/mobiles/css/css.css">
     <script type="text/javascript" src="/mobiles/js/jquery.min.js"></script>
     <script type="text/javascript" src="/mobiles/js/TouchSlide.1.1.js"></script>

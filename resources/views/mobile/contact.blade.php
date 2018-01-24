@@ -3,6 +3,9 @@
 @section('keywords')联系我们@stop
 @section('description')   21yinpin.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥@stop
 @section('main_content')
+    <div class="common_tit">
+        <nav class="tit">@include('mobile.position')</nav>
+    </div>
     <div class="list_middle">
         <div class="content_brand">
             <div class="content">

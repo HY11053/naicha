@@ -3,7 +3,7 @@
 <div class="header">
     <div class="top">
         <div class="inner">
-            <div class="top_l">您好，欢迎访问零食加盟网！</div>
+            <div class="top_l">您好，欢迎访问世纪饮品网！</div>
             <div class="top_r">
                 <div class="tel">7*24小时免费直拨 400-8896-216</div>
                 <div class="add_wx" id="js_add_wx">
@@ -41,17 +41,17 @@
             <div class="quick_btn">
                 <ul>
                     <li>
-                        <a href="/paihangbang/"><i class="icon1"></i><span class="tit">排行榜</span></a>
+                        <a href="/paihangbang"><i class="icon1"></i><span class="tit">排行榜</span></a>
                     </li>
                     <li>
-                        <a href="" rel="nofollow"><i class="icon2"></i><span class="tit">项目搜索</span></a>
+                        <a href="javascript:;" rel="nofollow" target="_self"><i class="icon2"></i><span class="tit">项目搜索</span></a>
                     </li>
 
                     <li>
-                        <a href="/pinpai/"><i class="icon3"></i><span class="tit">品牌大全</span></a>
+                        <a href="/pinpai"><i class="icon3"></i><span class="tit">品牌大全</span></a>
                     </li>
                     <li>
-                        <a href="/ask/"><i class="icon4"></i><span class="tit">加盟问答</span></a>
+                        <a href="javascript:;" rel="nofollow" target="_self"><i class="icon4"></i><span class="tit">加盟问答</span></a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
                 <li class="cur"><a href="/" >首页</a></li>
                 @foreach($headers->HeaderLists() as $real_path=>$header)
 
-                <li><a href="/{{$real_path}}/" >{{$header}}</a></li>
+                <li><a href="/{{$real_path}}" >{{$header}}</a></li>
                 @endforeach
             </ul>
         </div>

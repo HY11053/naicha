@@ -1,16 +1,16 @@
-@extends('mobile.mobile')
+@extends('mip.mip')
 @section('title') {{$thistypeinfo->title}}@stop
 @section('keywords') {{$thistypeinfo->keywords}} @stop
 @section('description')  {{$thistypeinfo->description}}  @stop
 @section('main_content')
     <div class="common_tit">
-        <nav class="tit">@include('mobile.position')</nav>
+        <nav class="tit">@include('mip.position')</nav>
     </div>
     <div class="brand_list">
         <ul>
             @foreach($pagelists as $brand)
             <li>
-                <div class="img_show"><a href="/{{$brand->arctype->real_path}}/{{$brand->id}}.shtml"><img src="{{$brand->litpic}}" alt="{{$brand->article->brandname}}"/></a></div>
+                <div class="img_show"><a href="/{{$brand->arctype->real_path}}/{{$brand->id}}.shtml"><mip-img src="{{$brand->litpic}}" alt="{{$brand->article->brandname}}"/></a></div>
                 <div class="cont">
                     <p class="tit"><a href="/{{$brand->arctype->real_path}}/{{$brand->id}}.shtml">{{$brand->article->brandname}}</a></p>
                     <p class="price">基本投资：<em>{{$brand->article->brandpay}}</em></p>

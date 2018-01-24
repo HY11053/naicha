@@ -46,7 +46,6 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
     Route::get('article/type/{id}','ArticleController@Type');
     Route::post('article/create','ArticleController@PostCreate')->name('article_create');
     Route::post('article/search','ArticleController@PostArticleSearch')->name('article_search');
-
     Route::put('article/edit/{id}','ArticleController@PostEdit')->name('article_edit');
     Route::get('flink','FlinkController@Index');
     Route::get('flink/create','FlinkController@CreateFlink');
@@ -125,21 +124,31 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ()
 Route::get('phone',function(){
     return view('phone');
 });
-
+/**
+ * mip页面
+ */
+Route::group(['domain' => 'mip.21yinpin.com'], function () {
+    Route::get('/', 'Mip\MipIndexController@MipIndex');
+    Route::get('about','Mip\MipIndexController@Mipabout');
+    Route::get('law','Mip\MipIndexController@Miplaw');
+    Route::get('contact','Mip\MipIndexController@Mipcontact');
+    Route::get('paihangbang','Mip\MipIndexController@MipPaihangbang');
+    Route::get('paihangbang/page/{page}/','Mip\MipIndexController@MipPaihangbang')->name('paihangbanglists');
+    Route::get('brands','Mip\MipIndexController@MipPinpai');
+    Route::get('brands/page/{page}/','Mip\MipIndexController@Mippinpai')->name('Pinpai');
+    Route::get('{path}','Mip\MipIndexController@MipBrandLists');
+    Route::get('{path?}/page/{page}/','Mip\MipIndexController@MipBrandLists')->name('pagelists');
+    Route::get('{path?}/{id}.shtml','Mip\MipIndexController@MipBrandArticle');
+    Route::any('/phone/crosscomplate','Mobile\PhoneController@Complates');
+    Route::any('/phone/mipcrosscomplate','Mobile\PhoneController@phoneButtomComplates');
+});
 //前台界面
 Route::group(['domain' => 'm.21yinpin.com'], function () {
     Route::get('/', 'Mobile\MobileController@Index');
-    Route::get('ask','Mobile\MobileController@Indexask');
-    Route::get('ask/hot','Mobile\MobileController@HotAsks');
-    Route::get('ask/pending','Mobile\MobileController@PendingAsks');
-    Route::get('ask/page/{page}/','Mobile\MobileController@Indexask')->name('asklists');
-    Route::get('ask/pending/page/{page}/','Mobile\MobileController@PendingAsks')->name('askpendiglists');
-    Route::get('ask/hot/page/{page}/','Mobile\MobileController@HotAsks')->name('askhotlists');
     Route::get('about','Mobile\StatementController@about');
     Route::get('law','Mobile\StatementController@law');
     //Route::get('map','Frontend\StatementController@map');
     Route::get('contact','Mobile\StatementController@contact');
-    Route::get('ask/{id}.shtml','Mobile\MobileController@AskArticle');
     Route::get('paihangbang','Mobile\MobileController@Paihangbang');
     Route::get('paihangbang/page/{page}/','Mobile\MobileController@Paihangbang')->name('paihangbanglists');
     Route::get('brands','Mobile\MobileController@Pinpai');
@@ -156,10 +165,6 @@ Route::get('demo','Frontend\ComparisionController@demo');
 Route::get('dem2','Frontend\ComparisionController@demo2');
 Route::get('dem3','Frontend\ComparisionController@demo3');
 Route::get('xgsearch','Frontend\ComparisionController@xgsearch');
-Route::get('ask','Frontend\AskController@Index');
-Route::get('ask/page/{page}/','Frontend\AskController@Index')->name('asklists');
-Route::get('ask/pending/page/{page}/','Frontend\AskController@PendingAsks')->name('askpendiglists');
-Route::get('ask/hot/page/{page}/','Frontend\AskController@HotAsks')->name('askhotlists');
 Route::get('paihangbang','Frontend\BrandsController@Paihangbang');
 Route::get('paihangbang/page/{page}/','Frontend\BrandsController@Paihangbang')->name('paihangbanglists');
 Route::get('brands','Frontend\BrandsController@Pinpai');
@@ -171,7 +176,6 @@ Route::any('/wechat', 'Wechat\WechatController@serve');
 Route::get('ask/hot','Frontend\AskController@HotAsks');
 Route::get('ask/pending','Frontend\AskController@PendingAsks');
 Route::post('questions/add','Frontend\QuestionController@Add')->name('answeradd');
-Route::get('ask/{id}.shtml','Frontend\AskController@AskArticle');
 Route::put('answer/{id}','Frontend\AnswerController@AnswerCreate')->name('answercrtete');
 Route::get('comparision/{p1?}-{p2?}-{p3?}.shtml','Frontend\ComparisionController@Compare');
 Route::post('comments','Frontend\CommentController@PostComment');

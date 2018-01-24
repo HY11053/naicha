@@ -46,7 +46,7 @@
             <div class="detail">
                 <ul>
                     <li>投资金额：<span class="price">{{$thisarticleinfos->article['brandpay']}}</span></li>
-                    <li>所属行业：<span class="crumbs">零食</span></li>
+                    <li>所属行业：<span class="crumbs">奶茶、饮品类</span></li>
                 </ul>
             </div>
             <div class="tit_pice">

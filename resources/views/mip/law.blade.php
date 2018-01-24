@@ -1,10 +1,10 @@
-@extends('mobile.mobile')
+@extends('mip.mip')
 @section('title')世纪饮品网法律声明@stop
 @section('keywords') 世纪饮品网法律声明@stop
 @section('description') 世纪饮品网法律声明@stop
 @section('main_content')
     <div class="common_tit">
-        <nav class="tit">@include('mobile.position')</nav>
+        <nav class="tit">@include('mip.position')</nav>
     </div>
     <div class="list_middle">
         <div class="content_brand">

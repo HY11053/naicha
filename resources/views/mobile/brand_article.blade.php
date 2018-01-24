@@ -3,6 +3,9 @@
 @section('keywords') {{$thisarticleinfos->keywords}} @stop
 @section('description')  {{$thisarticleinfos->description}} @stop
 @section('main_content')
+    <div class="common_tit">
+        <nav class="tit">@include('mobile.position')</nav>
+    </div>
     <div class="brand_detail">
         <div class="hd">
             <div class="img_show"><img src="{{$thisarticleinfos->litpic}}" alt="{{$thisarticleinfos->title}}"/></div>

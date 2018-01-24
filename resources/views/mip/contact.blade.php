@@ -1,31 +1,15 @@
-@extends('frontend.frontend')
-@section('title')联系我们@stop
-@section('keywords')联系我们 @stop
-@section('description')联系我们@stop
-@section('headlibs')
-<link rel="stylesheet" type="text/css" href="/reception/css/news.css"/>
-@stop
+@extends('mip.mip')
+@section('title') 联系我们@stop
+@section('keywords')联系我们@stop
+@section('description')   21yinpin.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥@stop
 @section('main_content')
-<!--主体开始-->
-<div class="main clearfix">
-    <!--左侧开始-->
-    <div class="about_l">
-        <div class="hd"></div>
-        <div class="bd">
-            <ul>
-                <li class="cur"><a href="/about" target="_blank">关于我们</a></li>
-                <li><a href="/law" target="_blank">法律声明</a></li>
-                <li><a href="/contact" target="_blank">联系我们</a></li>
-            </ul>
-        </div>
+    <div class="common_tit">
+        <nav class="tit">@include('mip.position')</nav>
     </div>
-    <!--左侧结束-->
-
-    <!--右侧开始-->
-    <div class="about_r">
-        <div class="hd">联系我们</div>
-        <div class="bd">
-            <div class="about_contact">
+    <div class="list_middle">
+        <div class="content_brand">
+            <div class="content">
+                <h1>联系我们</h1>
                 21yinpin.com创业商机网隶属于上海莫卡网络科技有限公司，中国互联网企业50强，公司总部位于上海，同时在全国拥有北京、广州、武汉、合肥、<br>济南、六安等6个运营机构，员工总数超过1200人。<br><br>
                 <b>客 服 部</b><br>
                 与客户（广告主）进行日常沟通，处理客户项目页面制作和维护等问题,提高客户满意度<br>
@@ -48,11 +32,8 @@
                 传真：021-31018991<br>
                 网址：http://www.21yinpin.com/
                 <br>
+
             </div>
         </div>
     </div>
-    <!--右侧结束-->
-</div>
-<!--主体结束-->
-
 @stop

@@ -1,14 +1,17 @@
-@extends('mobile.mobile')
+@extends('mip.mip')
 @section('title') {{ config('app.webname', '世纪饮品网') }} @stop
 @section('keywords') {{ config('app.keywords', '世纪饮品网') }} @stop
 @section('description') {{ config('app.description', '世纪饮品网') }} @stop
+@section('style')
+@stop
 @section('main_content')
     <div class="index_nav">
         <ul>
             @foreach($headers as $index=>$header)
 
-            <li><a href="/{{$header->real_path}}" class="icon{{$index}}"><em></em>{{$header->typename}}</a></li>
+                <li><a href="/{{$header->real_path}}" class="icon{{$index}}"><em></em>{{$header->typename}}</a></li>
             @endforeach
+                <li><a href="/paihangbang" class="icon7"><em></em>排行榜</a></li>
         </ul>
     </div>
     <div class="index_item">
@@ -18,28 +21,28 @@
         <div class="bd">
             <ul>
                 @foreach($lingshibrands as $lingshibrand)
-                <li>
-                    <a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml">
-                        <div class="img_show"><img src="{{$lingshibrand->litpic}}"/></div>
-                        <div class="cont">
-                            <p class="tit">{{$lingshibrand->shorttitle}}</p>
-                            <p class="desc">{{str_limit($lingshibrand->description,26,'...')}}</p>
-                            <p class="price">投资金额：<em>￥{{$lingshibrand->article->brandpay}}</em></p>
-                        </div>
-                    </a>
-                </li>
+                    <li>
+                        <a href="/{{$lingshibrand->arctype->real_path}}/{{$lingshibrand->id}}.shtml">
+                            <div class="img_show"><mip-img src="{{$lingshibrand->litpic}}"/></div>
+                            <div class="cont">
+                                <p class="tit">{{$lingshibrand->shorttitle}}</p>
+                                <p class="desc">{{str_limit($lingshibrand->description,26,'...')}}</p>
+                                <p class="price">投资金额：<em>￥{{$lingshibrand->article->brandpay}}</em></p>
+                            </div>
+                        </a>
+                    </li>
                 @endforeach
             </ul>
         </div>
         <div class="list">
             <ul>
                 @foreach($lingshibrandls as $index=>$lingshibrandl)
-                <li>
-                    <a href="/{{$lingshibrandl->arctype->real_path}}/{{$lingshibrandl->id}}.shtml">
-                        <i>{{$index+1}}</i><span>{{$lingshibrandl->shorttitle}}</span><em>已有{{$lingshibrandl->article->brandapply}}人申请</em>
-                    </a>
-                </li>
-              @endforeach
+                    <li>
+                        <a href="/{{$lingshibrandl->arctype->real_path}}/{{$lingshibrandl->id}}.shtml">
+                            <i>{{$index+1}}</i><span>{{$lingshibrandl->shorttitle}}</span><em>已有{{$lingshibrandl->article->brandapply}}人申请</em>
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>
@@ -52,7 +55,7 @@
                 @foreach($chaohuobrands as $chaohuobrand)
                     <li>
                         <a href="/{{$chaohuobrand->arctype->real_path}}/{{$chaohuobrand->id}}.shtml">
-                            <div class="img_show"><img src="{{$chaohuobrand->litpic}}"/></div>
+                            <div class="img_show"><mip-img src="{{$chaohuobrand->litpic}}"/></div>
                             <div class="cont">
                                 <p class="tit">{{$chaohuobrand->shorttitle}}</p>
                                 <p class="desc">{{str_limit($chaohuobrand->description,26,'...')}}</p>
@@ -85,7 +88,7 @@
                 @foreach($ganguobrands as $ganguobrand)
                     <li>
                         <a href="/{{$ganguobrand->arctype->real_path}}/{{$ganguobrand->id}}.shtml">
-                            <div class="img_show"><img src="{{$ganguobrand->litpic}}"/></div>
+                            <div class="img_show"><mip-img src="{{$ganguobrand->litpic}}"/></div>
                             <div class="cont">
                                 <p class="tit">{{$ganguobrand->shorttitle}}</p>
                                 <p class="desc">{{str_limit($ganguobrand->description,26,'...')}}</p>
@@ -119,7 +122,7 @@
                 @foreach($jinkoubrands as $jinkoubrand)
                     <li>
                         <a href="/{{$jinkoubrand->arctype->real_path}}/{{$jinkoubrand->id}}.shtml">
-                            <div class="img_show"><img src="{{$jinkoubrand->litpic}}"/></div>
+                            <div class="img_show"><mip-img src="{{$jinkoubrand->litpic}}"/></div>
                             <div class="cont">
                                 <p class="tit">{{$jinkoubrand->shorttitle}}</p>
                                 <p class="desc">{{str_limit($jinkoubrand->description,26,'...')}}</p>
@@ -153,7 +156,7 @@
                 @foreach($newbrands as $newbrand)
                     <li>
                         <a href="/{{$newbrand->arctype->real_path}}/{{$newbrand->id}}.shtml">
-                            <div class="img_show"><img src="{{$newbrand->litpic}}"/></div>
+                            <div class="img_show"><mip-img src="{{$newbrand->litpic}}"/></div>
                             <div class="cont">
                                 <p class="tit">{{$newbrand->shorttitle}}</p>
                                 <p class="desc">{{str_limit($newbrand->description,26,'...')}}</p>
@@ -186,8 +189,8 @@
         <div class="bd">
             <ul>
                 @foreach($newsarticles as $newsarticle)
-                <li><span class="date">{{$newsarticle->published_at}}</span><a class="txt" href="/{{$newsarticle->arctype->real_path}}/{{$newsarticle->id}}.shtml">{{$newsarticle->title}}</a></li>
-            @endforeach
+                    <li><span class="date">{{$newsarticle->published_at}}</span><a class="txt" href="/{{$newsarticle->arctype->real_path}}/{{$newsarticle->id}}.shtml">{{$newsarticle->title}}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>
@@ -199,8 +202,8 @@
         <div class="bd">
             <ul>
                 @foreach($asks as $ask)
-                <li><span class="date">{{$ask->created_at}}</span><a class="txt" href="/{{$ask->arctype->real_path}}/{{$ask->id}}.shtml">{{$ask->title}}</a></li>
-               @endforeach
+                    <li><span class="date">{{$ask->created_at}}</span><a class="txt" href="/{{$ask->arctype->real_path}}/{{$ask->id}}.shtml">{{$ask->title}}</a></li>
+                @endforeach
             </ul>
         </div>
     </div>

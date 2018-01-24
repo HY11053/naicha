@@ -137,7 +137,7 @@ return [
     'keywords'=>'奶茶店加盟,饮品店加盟,奶茶品牌加盟,世纪饮品网',
     'description'=>'世纪饮品网品牌信息服务平台,汇聚精选全球饮品奶茶品牌商机,拥有海量饮品类奶茶店加盟项目,致力于服务广大有奶茶店投资需求的创业人群,帮助创业者了解开店饮品品牌的选择、进货批发、饮品配方及各类信息',
     'api'=>'http://data.zz.baidu.com/urls?site=www.21yinpin.com&token=QeSFIvl5RWRgU3BT',
-    'apioriginal'=>'',
+    'mip_api'=>'http://data.zz.baidu.com/urls?site=mip.21yinpin.com&token=QeSFIvl5RWRgU3BT&type=mip',
     /*
 
     /*
