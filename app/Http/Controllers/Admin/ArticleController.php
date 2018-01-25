@@ -85,7 +85,7 @@ class ArticleController extends Controller
         }
        $request['keywords']=$request['keywords']?$request['keywords']:$request['title'];
         $request['click']=rand(100,900);
-        $request['description']=(!empty($request['description']))?$request['description']:str_limit(mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body']))))), $limit = 180, $end = '');
+        $request['description']=(!empty($request['description']))?$request['description']:str_limit(trim(str_replace(' ','',str_replace('&nbsp;','',mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body'])))))))), $limit = 180, $end = '');
         $request['write']=auth('admin')->user()->name;
         $request['dutyadmin']=auth('admin')->id();
         //图片alt信息及title替换
@@ -167,7 +167,9 @@ class ArticleController extends Controller
         }else{
             $request['litpic']='';
         }
-        $request['description']=(!empty($request['description']))?$request['description']:str_limit(mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body']))))), $limit = 180, $end = '');
+        //$request['description']=(!empty($request['description']))?$request['description']:str_limit(mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['body']))))), $limit = 180, $end = '');
+        //dd($request->all());
+        $request['description']=str_limit(str_replace(' ','',str_replace('&nbsp;','',mb_ereg_replace('^(　| )+','', preg_replace('/\r|\n/', '', trim(strip_tags(htmlspecialchars_decode($request['description']))))))), $limit = 180, $end = '');
         if (empty($request['imagepics']))
         {
             $request['imagepics']=' ';

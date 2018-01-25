@@ -1,7 +1,7 @@
 @extends('frontend.frontend')
 @section('title'){{$thisarticleinfos->title}}@stop
 @section('keywords'){{$thisarticleinfos->keywords}}@stop
-@section('description'){{$thisarticleinfos->description}}@stop
+@section('description'){{trim($thisarticleinfos->description)}}@stop
 @section('headlibs')
     <meta name="Copyright" content="世纪饮品网-{{env('APP_URL')}}"/>
     <meta name="author" content="世纪饮品网" />

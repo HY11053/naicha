@@ -1,7 +1,7 @@
 @extends('mobile.mobile')
-@section('title') {{ config('app.webname', '世纪饮品网') }} @stop
-@section('keywords') {{ config('app.keywords', '世纪饮品网') }} @stop
-@section('description') {{ config('app.description', '世纪饮品网') }} @stop
+@section('title'){{config('app.webname', '世纪饮品网') }}@stop
+@section('keywords'){{config('app.keywords', '世纪饮品网') }}@stop
+@section('description'){{config('app.description', '世纪饮品网') }}@stop
 @section('main_content')
     <div class="index_nav">
         <ul>

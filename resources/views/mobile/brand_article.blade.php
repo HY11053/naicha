@@ -1,7 +1,7 @@
 @extends('mobile.mobile')
-@section('title') {{$thisarticleinfos->title}} @stop
-@section('keywords') {{$thisarticleinfos->keywords}} @stop
-@section('description')  {{$thisarticleinfos->description}} @stop
+@section('title'){{$thisarticleinfos->title}}@stop
+@section('keywords'){{$thisarticleinfos->keywords}}@stop
+@section('description'){{trim($thisarticleinfos->description)}}@stop
 @section('main_content')
     <div class="common_tit">
         <nav class="tit">@include('mobile.position')</nav>

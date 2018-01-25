@@ -1,7 +1,7 @@
 @extends('mobile.mobile')
-@section('title') 关于我们@stop
-@section('keywords') 关于我们@stop
-@section('description')  21饮品致力于为每一位加盟商提供最齐全的加盟项目、最权威的加盟知识和最及时的加盟资讯，帮助加盟商开一家最成功的加盟店@stop
+@section('title')关于我们@stop
+@section('keywords')关于我们@stop
+@section('description')21饮品致力于为每一位加盟商提供最齐全的加盟项目、最权威的加盟知识和最及时的加盟资讯，帮助加盟商开一家最成功的加盟店@stop
 @section('main_content')
     <div class="common_tit">
         <nav class="tit">@include('mobile.position')</nav>

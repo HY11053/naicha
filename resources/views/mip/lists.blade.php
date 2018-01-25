@@ -1,7 +1,7 @@
 @extends('mip.mip')
-@section('title') {{$thistypeinfo->title}}@stop
-@section('keywords') {{$thistypeinfo->keywords}} @stop
-@section('description')  {{$thistypeinfo->description}}  @stop
+@section('title'){{$thistypeinfo->title}}@stop
+@section('keywords'){{$thistypeinfo->keywords}} @stop
+@section('description'){{trim($thistypeinfo->description)}}@stop
 @section('main_content')
     <div class="common_tit">
         <nav class="tit">@include('mip.position')</nav>
