@@ -313,7 +313,7 @@
                         <div class="xw">
                             <ul class="clearfix">
                                 @foreach($xgsearchs as $xgsearch)
-                                <li><em>{{$xgsearch->published_at}}</em><a href="/{{$xgsearch->arctype->real_path}}/{{$xgsearch->id}}.shtml" title="{{$xgsearch->title}}">{{$xgsearch->title}} </a></li>
+                                <li><a href="/{{$xgsearch->arctype->real_path}}/{{$xgsearch->id}}.shtml" title="{{$xgsearch->title}}">{{$xgsearch->title}} </a></li>
                                 @endforeach
                             </ul>
                         </div>

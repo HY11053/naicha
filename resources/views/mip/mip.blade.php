@@ -533,5 +533,15 @@
 <script src="https://c.mipcdn.com/static/v1/mip-nav-slidedown/mip-nav-slidedown.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-fixed/mip-fixed.js"></script>
 <script src="https://c.mipcdn.com/static/v1/mip-lightbox/mip-lightbox.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-stats-baidu/mip-stats-baidu.js"></script>
+<mip-stats-baidu>
+    <script type="application/json">
+        {
+            "token": "d28d18338087ec37b99eb01f33454974",
+            "_setCustomVar": [1, "login", "1", 2],
+            "_setAutoPageview": [true]
+        }
+    </script>
+</mip-stats-baidu>
 </body>
 </html>

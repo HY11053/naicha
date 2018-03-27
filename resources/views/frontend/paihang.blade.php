@@ -16,7 +16,7 @@
 <div class="main clearfix">
 	<!--左边 开始-->
 	<div class="ph_l">
-		<p class="tit">58奶茶店品牌排行榜</p>
+		<p class="tit">奶茶店品牌排行榜</p>
 		<ul>
 			<li class="cur"><a target="_self" href="/pinpai">奶茶店品牌</a></li>
 			<li><a target="_self" href="/taiwannaicha">台湾奶茶</a></li>

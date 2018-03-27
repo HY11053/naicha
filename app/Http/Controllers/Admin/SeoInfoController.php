@@ -100,7 +100,7 @@ class SeoInfoController extends Controller
 
     public function WorkLinks()
     {
-        $links=Archive::where('created_at','<',Carbon::now())->get();
+        $links=Archive::where('write',auth('admin')->user()->name)->where('created_at','>',Carbon::today())->get();
         return view('admin.worklinks',compact('links'));
     }
     /*

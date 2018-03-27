@@ -22,7 +22,8 @@
     <script type="text/javascript" src="/reception/js/index.js"></script>
 </head>
 
-<body>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
 @include('frontend.header')
 
 <main>
@@ -83,5 +84,16 @@
         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011302003924" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="http://www.beian.gov.cn/img/ghs.png" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">沪公网安备 31011302003924号</p></a>
     </div>
 </footer>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3ef763e0d186c907d06be12c35ba3103";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    $("body").attr({"oncontextmenu":"self.event.returnValue=false","onselectstart":"return false"});
+</script>
+
 </body>
 </html>

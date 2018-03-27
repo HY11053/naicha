@@ -50,7 +50,7 @@
                 <div class="xw">
                     <ul class="clearfix">
                         @foreach($xgnews as $xgnew)
-                        <li><em>{{$xgnew->updated_at}}</em><a href="/{{$xgnew->arctype->real_path}}/{{$xgnew->id}}.shtml" title="{{$xgnew->title}}">{{$xgnew->title}} </a></li>
+                        <li>{{--<em>{{$xgnew->updated_at}}</em>--}}<a href="/{{$xgnew->arctype->real_path}}/{{$xgnew->id}}.shtml" title="{{$xgnew->title}}">{{$xgnew->title}} </a></li>
                       @endforeach
                        </ul>
                 </div>

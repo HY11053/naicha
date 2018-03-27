@@ -122,9 +122,9 @@
         <!--列表 结束-->
 
         <!--分页 开始-->
-        <div class="page">
+        {{--<div class="page">
             {!! $pagelists->links() !!}
-        </div>
+        </div>--}}
         <!--分页 结束-->
     </div>
     <!--左边 结束-->

@@ -32,4 +32,14 @@ class Position{
         return $typeinfos;
 
     }
+
+    public function randomBanner()
+    {
+        $bannerLists=[
+            '<a href="/pinpai/79.shtml"><img src="/reception/images/temp/bn7.jpg" alt="阿姨奶茶加盟"></a>',
+            '<a href="/pinpai/39.shtml"><img src="/reception/images/temp/bn8.jpg" alt="一点点奶茶加盟"></a>',
+            '<a href="/taiwannaicha/29.shtml"><img src="/reception/images/temp/bn9.jpg" alt="CoCo奶茶加盟"></a>',
+            ];
+        return $bannerLists;
+    }
 }

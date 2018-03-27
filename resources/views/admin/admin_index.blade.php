@@ -114,10 +114,10 @@
                             @foreach($articleUsers as $articleUser)
                                 <div class="progress-group">
                                     <span class="progress-text">{{$articleUser}}</span>
-                                    <span class="progress-number"><b>{{\App\AdminModel\Archive::where('created_at','>',\Carbon\Carbon::today())->where('created_at','<',\Carbon\Carbon::now())->where('write',$articleUser)->count()}}</b>/25</span>
+                                    <span class="progress-number"><b>{{\App\AdminModel\Archive::where('created_at','>',\Carbon\Carbon::today())->where('created_at','<',\Carbon\Carbon::now())->where('write',$articleUser)->count()}}</b>/45</span>
 
                                     <div class="progress sm">
-                                        <div class="progress-bar progress-bar-{{$colorStyle[rand(0,4)]}}" style="width: {{sprintf("%.4f",\App\AdminModel\Archive::where('created_at','>',\Carbon\Carbon::today())->where('created_at','<',\Carbon\Carbon::now())->where('write',$articleUser)->count()/25,0,-1)*100}}%"></div>
+                                        <div class="progress-bar progress-bar-{{$colorStyle[rand(0,4)]}}" style="width: {{sprintf("%.4f",\App\AdminModel\Archive::where('created_at','>',\Carbon\Carbon::today())->where('created_at','<',\Carbon\Carbon::now())->where('write',$articleUser)->count()/45,0,-1)*100}}%"></div>
                                     </div>
                                 </div>
                             @endforeach

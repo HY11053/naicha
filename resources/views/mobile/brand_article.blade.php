@@ -194,14 +194,9 @@
                             <canvas id="barChart" style="height:230px"></canvas>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
-
         <div class="clear"></div>
 @include('mobile.comments')
 

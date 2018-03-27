@@ -14,8 +14,8 @@ class IndexController extends Controller
     function Index()
     {
         //奶茶头部推荐品牌文档
-        $lingshibrands=Archive::where('mid','1')->whereIn('id',[39,54,65,69,24])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
-        $chaohuobrands=Archive::where('mid','1')->whereIn('id',[29,27,34,71,37,41,51,68,70])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
+        $lingshibrands=Archive::where('mid','1')->whereIn('id',[39,54,65,69,24,79,86,121,124,139])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
+        $chaohuobrands=Archive::where('mid','1')->whereIn('id',[29,27,34,71,37,41,51,68,70,179])->where('published_at','<=',Carbon::now())->take(10)->orderBy('id','asc')->get();
         $ganguobrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',3)->where('published_at','<=',Carbon::now())->take(10)->latest()->get();
         $jinkoubrands=Archive::where('flags','like','%'.'c'.'%')->where('mid','1')->where('typeid',4)->where('published_at','<=',Carbon::now())->take(10)->latest()->get();
         //创业好店
@@ -42,7 +42,7 @@ class IndexController extends Controller
         //人群解读
         $crowdnews=Archive::where('mid','<>','1')->where('typeid',5)->where('published_at','<=',Carbon::now())->latest()->skip(6)->take(6)->orderBy('published_at','desc')->get();
         //采购信息
-        $caiguonews=Archive::where('mid','<>','1')->where('typeid',5)->where('shorttitle','like','%'.'采购'.'%')->where('published_at','<=',Carbon::now())->latest()->take(10)->orderBy('published_at','desc')->get();
+        $caiguonews=Archive::where('mid','<>','1')->where('shorttitle','like','%'.'奶茶'.'%')->where('published_at','<=',Carbon::now())->latest()->take(10)->orderBy('published_at','desc')->get();
         //创业指导
         $chuangyenews=Archive::where('mid','<>','1')->where('typeid',5)->where('published_at','<=',Carbon::now())->latest()->skip(12)->take(8)->orderBy('published_at','desc')->get();
         //展会信息

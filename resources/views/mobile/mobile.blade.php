@@ -23,7 +23,7 @@
     <script type="text/javascript" src="/mobiles/js/index.js"></script>
 </head>
 
-<body>
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
 <div class="viewport">
 @include('mobile.header')
 @yield('main_content')
@@ -111,5 +111,16 @@
         </div>
     </div>
 </div>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?45e3287ddc0b1732b2dce5058bba6128";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    $("body").attr({"oncontextmenu":"self.event.returnValue=false","onselectstart":"return false"});
+</script>
+
 </body>
 </html>

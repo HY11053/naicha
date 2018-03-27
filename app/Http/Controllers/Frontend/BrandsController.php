@@ -108,7 +108,7 @@ class BrandsController extends Controller
         $topbrands=Archive::where('mid',1)->where('ismake','1')->whereIn('typeid',[1,3,4,5,10])->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(9)->get();
         $newsbrands=Archive::where('ismake','1')->where('published_at','<=',Carbon::now())->orderBy('click','desc')->take(10)->get();
         $brandtypes=Arctype::where('mid',1)->get();
-        $thistypeinfo=Arctype::where('real_path','pinpai')->first();
+        $thistypeinfo=Arctype::where('real_path',$cid)->first();
         $comments=Comment::where('is_hidden',0)->latest()->take(5)->get();
         return view('frontend.brands',compact('pagelists','topbrands','newsbrands','brandtypes','thistypeinfo','comments'));
 

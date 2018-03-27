@@ -272,7 +272,7 @@
         <section>
         <div class="index_box3 clearfix">
             <div class="index_box3_l h420">
-                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="炒货品牌"/></a></div>
+                <div class="img_show"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank"><img src="/reception/images/index_pic2.jpg" alt="港式奶茶加盟"/></a></div>
                 <p class="tit"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank">港式奶茶</a></p>
                 <p class="desc">丝袜奶茶/港式拉茶</p>
                 <p class="more"><a href="/{{\App\AdminModel\Arctype::where('id',3)->value('real_path')}}" target="_blank" title="{{\App\AdminModel\Arctype::where('id',3)->value('typename')}}">查看详情&gt;</a></p>
@@ -430,7 +430,7 @@
                     </div>
                 </div>
                 <div class="left_two">
-                    <h4>奶茶采购信息</h4>
+                    <h4>奶茶资讯信息</h4>
                     <dl>
                         @foreach($caiguonews as $index=>$caiguonew)
                         <dd><span>{{date('Y-m-d',strtotime($caiguonew->created_at))}}</span><i class=" ye ">{{$index+1}}.</i><a href="/{{$caiguonew->arctype->real_path}}/{{$caiguonew->id}}.shtml" target="_blank" title="{{$caiguonew->title}}">{{$caiguonew->title}}</a></dd>
